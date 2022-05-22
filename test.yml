@@ -1,0 +1,10 @@
+---
+- hosts: all
+  roles:
+  - role: '{{ playbook_dir }}'
+  tasks:
+  - command: /usr/local/bin/tfsec --version
+    register: tfsec_test_output
+  - name: tfsec --version
+    debug:
+      msg: '{{ tfsec_test_output.stdout }}'

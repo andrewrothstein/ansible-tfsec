@@ -1,0 +1,7 @@
+---
+# vars file for tfsec
+tfsec_platform: '{{ tfsec_os }}-{{ tfsec_arch }}'
+tfsec_url: '{{ tfsec_mirror }}/v{{ tfsec_ver }}/tfsec-{{ tfsec_platform }}{{ tfsec_dotexe | default("") }}'
+tfsec_checksum: '{{ tfsec_checksums[tfsec_ver][tfsec_platform] }}'
+tfsec_install_exe: '{{ tfsec_install_dir }}/tfsec-{{ tfsec_ver }}-{{ tfsec_platform }}{{ tfsec_dotexe | default("") }}'
+tfsec_link: '{{ tfsec_install_dir }}/tfsec'
