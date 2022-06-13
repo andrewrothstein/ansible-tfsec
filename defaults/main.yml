@@ -1,6 +1,6 @@
 ---
 # defaults file for tfsec
-tfsec_ver: 1.22.1
+tfsec_ver: 1.23.3
 tfsec_mirror: https://github.com/aquasecurity/tfsec/releases/download
 tfsec_os: linux
 tfsec_arch: amd64
@@ -32,3 +32,29 @@ tfsec_checksums:
     windows-amd64: sha256:8673d2c0e3d3ba849c5395b53bc74a2f63c0198df651071ea317112c204b2fa3
     # https://github.com/aquasecurity/tfsec/releases/download/v1.22.1/tfsec-windows-arm64.exe
     windows-arm64: sha256:085af1476cc00bd0b41eee37dca992006bf6e7984b746d6c9a3ffffddd23bbbf
+  '1.23.2':
+    # https://github.com/aquasecurity/tfsec/releases/download/v1.23.2/tfsec-darwin-amd64
+    darwin-amd64: sha256:8066f6efd9ecc944d21fa9855c6192d5307bfb1a374b479d4b22a769dbb51cf7
+    # https://github.com/aquasecurity/tfsec/releases/download/v1.23.2/tfsec-darwin-arm64
+    darwin-arm64: sha256:a34a655cce4e28f8eb265c979008d4d62dedcfb310b559260ce21ae83484c502
+    # https://github.com/aquasecurity/tfsec/releases/download/v1.23.2/tfsec-linux-amd64
+    linux-amd64: sha256:659ce35e6d40aadd9551c8fab87613c21f3f5d6629756596cbc60e56ce5acd80
+    # https://github.com/aquasecurity/tfsec/releases/download/v1.23.2/tfsec-linux-arm64
+    linux-arm64: sha256:5c9e82a2d99c96fe694b7337de02f774d5d8d2b79ee5aee4b70f631b810ccdb9
+    # https://github.com/aquasecurity/tfsec/releases/download/v1.23.2/tfsec-windows-amd64.exe
+    windows-amd64: sha256:5ea86ab09f8273105c2836cc2d2a78d49d3d8a2d05ccfa7481b40800f85f173a
+    # https://github.com/aquasecurity/tfsec/releases/download/v1.23.2/tfsec-windows-arm64.exe
+    windows-arm64: sha256:ec0140a6cd2669c0fcca3e3a42d3f85820b16f8161423294b0f2f6edcdbd04ee
+  '1.23.3':
+    # https://github.com/aquasecurity/tfsec/releases/download/v1.23.3/tfsec-darwin-amd64
+    darwin-amd64: sha256:c8399324ccfaee7f056b84ab23ce52a3777a7eb8e8b21e8a6b0a6a4de8ebc3f2
+    # https://github.com/aquasecurity/tfsec/releases/download/v1.23.3/tfsec-darwin-arm64
+    darwin-arm64: sha256:a8546dedebb573e78c57033b4a9502399d1f64177a6de9ad7c64fa6f99369044
+    # https://github.com/aquasecurity/tfsec/releases/download/v1.23.3/tfsec-linux-amd64
+    linux-amd64: sha256:ec3ed891dd7a7aa7238b0cacb1a483bcdf84f4d4ca922aaec8f9bf4e664325ba
+    # https://github.com/aquasecurity/tfsec/releases/download/v1.23.3/tfsec-linux-arm64
+    linux-arm64: sha256:e9495e4f72bf68c721f2937f57dcb41786ca1b5d943165f53abc14e2912e6190
+    # https://github.com/aquasecurity/tfsec/releases/download/v1.23.3/tfsec-windows-amd64.exe
+    windows-amd64: sha256:5f812df1e331b001d009d2bb446471c0626fad2b104607ca0f672cf696f8ff79
+    # https://github.com/aquasecurity/tfsec/releases/download/v1.23.3/tfsec-windows-arm64.exe
+    windows-arm64: sha256:24e81ce65f2d66c8ad3659d48e7e8f4fe43a1d741cd145b183487d3a2b5e21a2
