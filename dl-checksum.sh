@@ -33,4 +33,4 @@ dlver () {
     dl $ver windows arm64 .exe
 }
 
-dlver ${1:-1.23.3}
+dlver ${1:-1.26.0}
