@@ -1,5 +1,7 @@
 ---
 # vars file for tfsec
+tfsec_os: '{{ ansible_system | lower }}'
+tfsec_arch: '{{ tfsec_arch_map[ansible_architecture] }}'
 tfsec_platform: '{{ tfsec_os }}-{{ tfsec_arch }}'
 tfsec_url: '{{ tfsec_mirror }}/v{{ tfsec_ver }}/tfsec-{{ tfsec_platform }}{{ tfsec_dotexe | default("") }}'
 tfsec_checksum: '{{ tfsec_checksums[tfsec_ver][tfsec_platform] }}'
