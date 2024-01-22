@@ -9,6 +9,6 @@
       ansible.builtin.command: /usr/local/bin/tfsec --version
       changed_when: false
       register: tfsec_test_output
-    - name: tfsec --version
+    - name: Output from 'tfsec --version'
       ansible.builtin.debug:
         msg: '{{ tfsec_test_output.stdout }}'
