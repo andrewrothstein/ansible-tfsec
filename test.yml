@@ -1,10 +1,14 @@
 ---
-- hosts: all
-  roles:
-  - role: '{{ playbook_dir }}'
+- name: Testing andrewrothstein.tfsec
+  hosts: all
   tasks:
-  - command: /usr/local/bin/tfsec --version
-    register: tfsec_test_output
-  - name: tfsec --version
-    debug:
-      msg: '{{ tfsec_test_output.stdout }}'
+    - name: Installing andrewrothstein.tfsec
+      ansible.builtin.include_role:
+        name: '{{ playbook_dir }}'
+    - name: Executing 'tfsec --version'
+      ansible.builtin.command: /usr/local/bin/tfsec --version
+      changed_when: false
+      register: tfsec_test_output
+    - name: tfsec --version
+      ansible.builtin.debug:
+        msg: '{{ tfsec_test_output.stdout }}'
